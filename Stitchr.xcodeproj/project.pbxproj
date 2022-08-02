@@ -11,7 +11,7 @@
 		1C27C1CF28768AE000E5D17D /* VideoMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C27C1CE28768AE000E5D17D /* VideoMenu.swift */; };
 		1C27C1D528768EA600E5D17D /* hogrider.mov in Resources */ = {isa = PBXBuildFile; fileRef = 1C27C1D428768EA600E5D17D /* hogrider.mov */; };
 		1C27C1FB28778CAF00E5D17D /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C27C1FA28778CAF00E5D17D /* ImagePicker.swift */; };
-		1C27C23928779CD100E5D17D /* VideoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C27C23828779CD100E5D17D /* VideoPicker.swift */; };
+		1C27C23928779CD100E5D17D /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C27C23828779CD100E5D17D /* DataModel.swift */; };
 		1C27C23B28779E4100E5D17D /* VideoClip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C27C23A28779E4100E5D17D /* VideoClip.swift */; };
 		1C27C23D2877A4FC00E5D17D /* FriendList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C27C23C2877A4FC00E5D17D /* FriendList.swift */; };
 		1C27C23F2877E60D00E5D17D /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C27C23E2877E60D00E5D17D /* VideoModel.swift */; };
@@ -22,12 +22,25 @@
 		1C27C24C2878BFB800E5D17D /* mona.mov in Resources */ = {isa = PBXBuildFile; fileRef = 1C27C24B2878BFB800E5D17D /* mona.mov */; };
 		1C27C24E2878C01600E5D17D /* dog.mov in Resources */ = {isa = PBXBuildFile; fileRef = 1C27C24D2878C01600E5D17D /* dog.mov */; };
 		1C3D20E228811E41001A81D2 /* File in Resources */ = {isa = PBXBuildFile; fileRef = 1C3D20E128811E41001A81D2 /* File */; };
+		1C7BC9C9288F772600ADA2DA /* MakeVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7BC9C8288F772600ADA2DA /* MakeVideo.swift */; };
 		1C9CEB70287C88F400918342 /* ProfilePic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9CEB6F287C88F400918342 /* ProfilePic.swift */; };
 		1CB1CEC12874C721006CE00E /* StitchrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB1CEC02874C721006CE00E /* StitchrApp.swift */; };
 		1CB1CEC32874C721006CE00E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB1CEC22874C721006CE00E /* ContentView.swift */; };
 		1CB1CED22874C724006CE00E /* StitchrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB1CED12874C724006CE00E /* StitchrTests.swift */; };
 		1CB1CEDC2874C724006CE00E /* StitchrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB1CEDB2874C724006CE00E /* StitchrUITests.swift */; };
 		1CB1CEDE2874C724006CE00E /* StitchrUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB1CEDD2874C724006CE00E /* StitchrUITestsLaunchTests.swift */; };
+		1CC7B70F2895B7CC0044BD44 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC7B70E2895B7CC0044BD44 /* CameraView.swift */; };
+		1CC7B7132895B89A0044BD44 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC7B7122895B89A0044BD44 /* Camera.swift */; };
+		1CC7B7152895B8F20044BD44 /* PhotoCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC7B7142895B8F20044BD44 /* PhotoCollection.swift */; };
+		1CC7B7172895B92C0044BD44 /* PhotoAssetCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC7B7162895B92B0044BD44 /* PhotoAssetCollection.swift */; };
+		1CC7B7192895B9420044BD44 /* CachedImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC7B7182895B9420044BD44 /* CachedImageManager.swift */; };
+		1CC7B71B2895B9770044BD44 /* PhotoLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC7B71A2895B9770044BD44 /* PhotoLibrary.swift */; };
+		1CC7B71D2895B9A30044BD44 /* PhotoAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC7B71C2895B9A30044BD44 /* PhotoAsset.swift */; };
+		1CC7B71F2895B9EC0044BD44 /* ViewfinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC7B71E2895B9EB0044BD44 /* ViewfinderView.swift */; };
+		1CC7B7212895BA100044BD44 /* PhotoCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC7B7202895BA100044BD44 /* PhotoCollectionView.swift */; };
+		1CC7B7232895BA340044BD44 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC7B7222895BA330044BD44 /* PhotoView.swift */; };
+		1CC7B7252895BA4A0044BD44 /* ThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC7B7242895BA4A0044BD44 /* ThumbnailView.swift */; };
+		1CC7B7272895BA680044BD44 /* PhotoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC7B7262895BA680044BD44 /* PhotoItemView.swift */; };
 		1CF591FE2885BBCA0097FA26 /* VideoRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF591FD2885BBCA0097FA26 /* VideoRecord.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +66,7 @@
 		1C27C1CE28768AE000E5D17D /* VideoMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoMenu.swift; sourceTree = "<group>"; };
 		1C27C1D428768EA600E5D17D /* hogrider.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = hogrider.mov; sourceTree = "<group>"; };
 		1C27C1FA28778CAF00E5D17D /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
-		1C27C23828779CD100E5D17D /* VideoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPicker.swift; sourceTree = "<group>"; };
+		1C27C23828779CD100E5D17D /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		1C27C23A28779E4100E5D17D /* VideoClip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoClip.swift; sourceTree = "<group>"; };
 		1C27C23C2877A4FC00E5D17D /* FriendList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendList.swift; sourceTree = "<group>"; };
 		1C27C23E2877E60D00E5D17D /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
@@ -65,6 +78,7 @@
 		1C27C24B2878BFB800E5D17D /* mona.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = mona.mov; sourceTree = "<group>"; };
 		1C27C24D2878C01600E5D17D /* dog.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = dog.mov; sourceTree = "<group>"; };
 		1C3D20E128811E41001A81D2 /* File */ = {isa = PBXFileReference; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
+		1C7BC9C8288F772600ADA2DA /* MakeVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeVideo.swift; sourceTree = "<group>"; };
 		1C9CEB6F287C88F400918342 /* ProfilePic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePic.swift; sourceTree = "<group>"; };
 		1CB1CEBD2874C721006CE00E /* Stitchr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stitchr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CB1CEC02874C721006CE00E /* StitchrApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StitchrApp.swift; sourceTree = "<group>"; };
@@ -74,6 +88,18 @@
 		1CB1CED72874C724006CE00E /* StitchrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StitchrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CB1CEDB2874C724006CE00E /* StitchrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StitchrUITests.swift; sourceTree = "<group>"; };
 		1CB1CEDD2874C724006CE00E /* StitchrUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StitchrUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1CC7B70E2895B7CC0044BD44 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		1CC7B7122895B89A0044BD44 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		1CC7B7142895B8F20044BD44 /* PhotoCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollection.swift; sourceTree = "<group>"; };
+		1CC7B7162895B92B0044BD44 /* PhotoAssetCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAssetCollection.swift; sourceTree = "<group>"; };
+		1CC7B7182895B9420044BD44 /* CachedImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedImageManager.swift; sourceTree = "<group>"; };
+		1CC7B71A2895B9770044BD44 /* PhotoLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibrary.swift; sourceTree = "<group>"; };
+		1CC7B71C2895B9A30044BD44 /* PhotoAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAsset.swift; sourceTree = "<group>"; };
+		1CC7B71E2895B9EB0044BD44 /* ViewfinderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewfinderView.swift; sourceTree = "<group>"; };
+		1CC7B7202895BA100044BD44 /* PhotoCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionView.swift; sourceTree = "<group>"; };
+		1CC7B7222895BA330044BD44 /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
+		1CC7B7242895BA4A0044BD44 /* ThumbnailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailView.swift; sourceTree = "<group>"; };
+		1CC7B7262895BA680044BD44 /* PhotoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoItemView.swift; sourceTree = "<group>"; };
 		1CF591FD2885BBCA0097FA26 /* VideoRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRecord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +131,7 @@
 		1C27C1C6287641C600E5D17D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1CC7B7102895B82F0044BD44 /* CameraTest */,
 				1CB1CEC22874C721006CE00E /* ContentView.swift */,
 				1C27C1C7287641D600E5D17D /* VideoList.swift */,
 				1C27C1CE28768AE000E5D17D /* VideoMenu.swift */,
@@ -112,6 +139,7 @@
 				1C27C23A28779E4100E5D17D /* VideoClip.swift */,
 				1C27C23C2877A4FC00E5D17D /* FriendList.swift */,
 				1CF591FD2885BBCA0097FA26 /* VideoRecord.swift */,
+				1C7BC9C8288F772600ADA2DA /* MakeVideo.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -170,7 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				1CB1CEC02874C721006CE00E /* StitchrApp.swift */,
-				1C27C23828779CD100E5D17D /* VideoPicker.swift */,
+				1CC7B7112895B8510044BD44 /* CameraTest */,
 				1C27C1FA28778CAF00E5D17D /* ImagePicker.swift */,
 				1C27C1F9287787DF00E5D17D /* Resources */,
 				1C27C1CD2876846D00E5D17D /* Models */,
@@ -196,6 +224,33 @@
 				1CB1CEDD2874C724006CE00E /* StitchrUITestsLaunchTests.swift */,
 			);
 			path = StitchrUITests;
+			sourceTree = "<group>";
+		};
+		1CC7B7102895B82F0044BD44 /* CameraTest */ = {
+			isa = PBXGroup;
+			children = (
+				1CC7B70E2895B7CC0044BD44 /* CameraView.swift */,
+				1CC7B71E2895B9EB0044BD44 /* ViewfinderView.swift */,
+				1CC7B7202895BA100044BD44 /* PhotoCollectionView.swift */,
+				1CC7B7222895BA330044BD44 /* PhotoView.swift */,
+				1CC7B7242895BA4A0044BD44 /* ThumbnailView.swift */,
+				1CC7B7262895BA680044BD44 /* PhotoItemView.swift */,
+			);
+			path = CameraTest;
+			sourceTree = "<group>";
+		};
+		1CC7B7112895B8510044BD44 /* CameraTest */ = {
+			isa = PBXGroup;
+			children = (
+				1C27C23828779CD100E5D17D /* DataModel.swift */,
+				1CC7B7122895B89A0044BD44 /* Camera.swift */,
+				1CC7B7142895B8F20044BD44 /* PhotoCollection.swift */,
+				1CC7B7162895B92B0044BD44 /* PhotoAssetCollection.swift */,
+				1CC7B7182895B9420044BD44 /* CachedImageManager.swift */,
+				1CC7B71A2895B9770044BD44 /* PhotoLibrary.swift */,
+				1CC7B71C2895B9A30044BD44 /* PhotoAsset.swift */,
+			);
+			path = CameraTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,19 +387,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CC7B7272895BA680044BD44 /* PhotoItemView.swift in Sources */,
 				1C27C2432878953500E5D17D /* FriendModel.swift in Sources */,
 				1C27C23F2877E60D00E5D17D /* VideoModel.swift in Sources */,
 				1C27C1C8287641D600E5D17D /* VideoList.swift in Sources */,
 				1CB1CEC32874C721006CE00E /* ContentView.swift in Sources */,
+				1CC7B71B2895B9770044BD44 /* PhotoLibrary.swift in Sources */,
+				1CC7B7252895BA4A0044BD44 /* ThumbnailView.swift in Sources */,
+				1CC7B7212895BA100044BD44 /* PhotoCollectionView.swift in Sources */,
 				1C27C1FB28778CAF00E5D17D /* ImagePicker.swift in Sources */,
 				1C27C23B28779E4100E5D17D /* VideoClip.swift in Sources */,
-				1C27C23928779CD100E5D17D /* VideoPicker.swift in Sources */,
+				1CC7B7232895BA340044BD44 /* PhotoView.swift in Sources */,
+				1CC7B7132895B89A0044BD44 /* Camera.swift in Sources */,
+				1C27C23928779CD100E5D17D /* DataModel.swift in Sources */,
 				1CB1CEC12874C721006CE00E /* StitchrApp.swift in Sources */,
+				1CC7B7152895B8F20044BD44 /* PhotoCollection.swift in Sources */,
 				1C9CEB70287C88F400918342 /* ProfilePic.swift in Sources */,
 				1C27C2412877E6B700E5D17D /* ModelData.swift in Sources */,
 				1CF591FE2885BBCA0097FA26 /* VideoRecord.swift in Sources */,
 				1C27C1CF28768AE000E5D17D /* VideoMenu.swift in Sources */,
 				1C27C23D2877A4FC00E5D17D /* FriendList.swift in Sources */,
+				1C7BC9C9288F772600ADA2DA /* MakeVideo.swift in Sources */,
+				1CC7B7192895B9420044BD44 /* CachedImageManager.swift in Sources */,
+				1CC7B70F2895B7CC0044BD44 /* CameraView.swift in Sources */,
+				1CC7B71F2895B9EC0044BD44 /* ViewfinderView.swift in Sources */,
+				1CC7B7172895B92C0044BD44 /* PhotoAssetCollection.swift in Sources */,
+				1CC7B71D2895B9A30044BD44 /* PhotoAsset.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,7 +576,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Stitchr/Info.plist;
-				INFOPLIST_KEY_NSCameraUsageDescription = "Allow Access to Camera?";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please Allow Access To Camera";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Please Allow Acces To Microphone";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -541,7 +610,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Stitchr/Info.plist;
-				INFOPLIST_KEY_NSCameraUsageDescription = "Allow Access to Camera?";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please Allow Access To Camera";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Please Allow Acces To Microphone";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
