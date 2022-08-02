@@ -8,10 +8,23 @@
 import Foundation
 import UIKit
 
-struct FriendModel: Identifiable {
-    var id: Int
-    var username: String
-    var profilepic: String
+class FriendModel: Identifiable, ObservableObject {
     
+    init(id: Int, username: String, profilepic: String) {
+        self.id = id
+        self.username = username
+        self.profilepic = profilepic
+    }
+    
+    var id: Int?
+    var username: String?
+    var profilepic: String?
+    @Published var isChosen = false
     //var profilepic: UIImage
+    
+    func toggleChosen() {
+        print(self.isChosen)
+        self.isChosen = !self.isChosen
+        print(self.isChosen)
+    }
 }

@@ -12,8 +12,8 @@ struct FriendList: View {
         List {
             ForEach(allfriends) { friend in
                 HStack {
-                    ProfilePic(picture: friend.profilepic)
-                    Text("@"+friend.username)
+                    ProfilePic(picture: friend.profilepic!)
+                    Text("@"+friend.username!)
                 }
             }
         }

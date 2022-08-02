@@ -29,7 +29,7 @@ struct VideoClip: View {
             //Only Available with new IOS??
             //Will show error in XCode beta, until then. use deprecated functions
             //let image = try await generator.image(at: CMTime(value: 0, timescale: 1))
-                     
+            
             //let time = CMTime(value: 0, timescale: 1)
             
             //FIXME: Deprecated but no other way while image(:at) is in beta
@@ -52,8 +52,6 @@ struct VideoClip: View {
             .scaledToFit()
             .frame(width: 200, height: 200, alignment: .center)
 
-
-        
         /*
         Image(systemName: "square.fill")
             .resizable()
