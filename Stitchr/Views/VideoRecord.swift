@@ -11,11 +11,11 @@ import AVFoundation
 //https://developer.apple.com/documentation/avfoundation/capture_setup/requesting_authorization_for_media_capture_on_macos
 
 
-
-
 class PreviewView: UIView {
-    
+    //Set up the camera capture session and provide an input device
     let captureSession = AVCaptureSession()
+    
+    
     
     override class var layerClass: AnyClass {
         return AVCaptureVideoPreviewLayer.self
