@@ -14,30 +14,8 @@ struct ContentView: View {
     var body: some View {
         
         VStack {
-            NavigationView {
-                HStack {
-                    NavigationLink {
-                        VideoList()
-                    } label: {
-                        Text("My Videos")
-                    }
-                    .padding()
-                    
-                    Spacer()
-                    
-                    NavigationLink {
-                        //VideoClip()
-                        Text("Hello World")
-                    } label: {
-                        Text("Make Video")
-                    }
-                    .padding()
-                }
-            }
-            .ignoresSafeArea()
-            
-            Spacer()
-               
+            Header()
+            CameraView()
         }
     }
 }

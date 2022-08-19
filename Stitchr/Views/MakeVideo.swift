@@ -13,40 +13,50 @@ struct MakeVideo: View {
 
     @State private var chosenFriends: [FriendModel] = []
     
-    mutating func addFriend(_friend: FriendModel) -> Void {
+    mutating func chooseFriend(_friend: FriendModel) -> Void {
         chosenFriends.append(_friend)
     }
     
+    mutating func unchooseFriend(_friend: FriendModel) -> Void {
+        if let index = chosenFriends.firstIndex(of: _friend) {
+            chosenFriends.remove(at: index)
+        }
+    }
+    
+    func isChosen(_friend: FriendModel) -> Bool {
+        for friend in chosenFriends {
+            if _friend.username == friend.username {
+                return true
+            }
+        }
+        return false
+    }
+    
+    
+    
     var body: some View {
-        //List {
-        VStack {
-            ForEach(modelData.friends) { friend in
-                HStack {
-                    ProfilePic(picture: friend.profilepic!)
-                    Text("@"+friend.username!)
-                    
-                    Button("Add", action: friend.toggleChosen)
-                     
-                    /*
-                    Button {
-                        //friend.isChosen = true
-                        friend.toggleChosen()
-                        print(friend.isChosen)
-                    } label: {
-                        Text("Test")
+        ZStack {
+            VStack {
+                ForEach($modelData.friends) { $friend in
+            
+                    HStack {
+                        
+                        ProfilePic(picture: friend.profilepic!)
+                        Text("@"+friend.username!)
+                        
+                        if isChosen(_friend: friend) {
+                            Button("Remove", action: {
+                                if let index = chosenFriends.firstIndex(of: friend) {
+                                    chosenFriends.remove(at: index)
+                                }
+                            })
+                        } else {
+                            Button("Add", action: {chosenFriends.append(friend)})
+                        }
+                        
                     }
-                    */
-                    
-                    if friend.isChosen {
-                        Image(systemName: "star.fill")
-                            .foregroundColor(.yellow)
-                    } else {
-                        Image(systemName: "star")
-                    }
-                    
                 }
             }
-            //}
         }
     }
 }

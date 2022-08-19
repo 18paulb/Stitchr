@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct FriendList: View {
+    
+    @EnvironmentObject var modelData: ModelData
+    
     var body: some View {
         List {
-            ForEach(allfriends) { friend in
+            ForEach(modelData.friends) { friend in
                 HStack {
                     ProfilePic(picture: friend.profilepic!)
                     Text("@"+friend.username!)
@@ -23,5 +26,6 @@ struct FriendList: View {
 struct FriendList_Previews: PreviewProvider {
     static var previews: some View {
         FriendList()
+            .environmentObject(ModelData())
     }
 }

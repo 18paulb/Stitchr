@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-
+/*
 class FriendModel: Identifiable, ObservableObject {
     
     init(id: Int, username: String, profilepic: String) {
@@ -28,3 +28,24 @@ class FriendModel: Identifiable, ObservableObject {
         print(self.isChosen)
     }
 }
+*/
+
+struct FriendModel: Identifiable, Equatable {
+    
+    init(id: Int, username: String, profilepic: String) {
+        self.id = id
+        self.username = username
+        self.profilepic = profilepic
+    }
+    
+    var id: Int?
+    var username: String?
+    var profilepic: String?
+    var isChosen = false
+    //var profilepic: UIImage
+    
+    mutating func toggleChosen() {
+        self.isChosen = !self.isChosen
+    }
+}
+

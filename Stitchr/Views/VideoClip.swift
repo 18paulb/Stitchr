@@ -51,12 +51,6 @@ struct VideoClip: View {
             .resizable()
             .scaledToFit()
             .frame(width: 200, height: 200, alignment: .center)
-
-        /*
-        Image(systemName: "square.fill")
-            .resizable()
-            .frame(width: 200, height: 200, alignment: .center)
-        */
          
     }
 }
