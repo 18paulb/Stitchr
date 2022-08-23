@@ -13,7 +13,6 @@ struct ProfilePic: View {
     
     var body: some View {
 
-        
         Image(picture)
             .resizable()
             .clipShape(Circle())

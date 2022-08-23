@@ -13,10 +13,11 @@ struct VideoInfo: View {
     
     var body: some View {
         VStack {
-            Text("Contributors")
+            Text("Contributors:")
             
             ForEach(video.contributers) { contributor in
                 Text(contributor.username ?? "No Name")
+                    .bold()
             }
         }
     }
@@ -24,6 +25,6 @@ struct VideoInfo: View {
 
 struct VideoInfo_Previews: PreviewProvider {
     static var previews: some View {
-        VideoInfo(video: VideoModel(id: 3, name: "Concerts", length: 42, url: "hogrider"))
+        VideoInfo(video: allvideos[0])
     }
 }

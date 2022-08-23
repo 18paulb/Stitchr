@@ -26,8 +26,10 @@ struct MakeVideo: View {
             
             if videoName != "" {
                 Button("Make Video", action: {
+
+                    let newVideo = VideoModel(id: allvideos.count+1, name: videoName, length: 34, url: "hogrider", contributers: friendList)
                     //Adds video but still have to see if it is scene in VideoList()
-                    allvideos.append(VideoModel(id: 4, name: videoName, length: 34, url: "hogrider"))
+                    allvideos.append(newVideo)
                 })
             }
         }

@@ -10,14 +10,13 @@ import SwiftUI
 struct VideoList: View {
     var body: some View {
         NavigationView {
-            //TODO: These are all static, replace eventually with backend videos and views that come with it
-            ScrollView {
-                
+            //ScrollView {
+            List {
                 ForEach(allvideos) { video in
                     VStack {
                         VideoClip()
                         NavigationLink {
-                                VideoMenu(title: video.name, resource: video.url)
+                                VideoMenu(video: video)
                         } label: {
                             Text("Add To Video")
                         }.padding()

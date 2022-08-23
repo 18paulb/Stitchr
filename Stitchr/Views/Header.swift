@@ -9,43 +9,32 @@ import SwiftUI
 
 struct Header: View {
     var body: some View {
-        
-        VStack {
-            Text("Stitcher")
-                .font(.title)
-                .foregroundColor(.black)
-                .frame(height: 30)
-            
-            NavigationView {
-                List {
-                    NavigationLink {
-                        VideoList()
-                    } label: {
-                        Text("My Videos")
-                    }
-                    
+        NavigationView {
+            VStack {
+                Text("Stitcher")
+                    .font(.title)
+                    .foregroundColor(.black)
+                    .frame(height: 30)
+                HStack {
                     NavigationLink {
                         ChooseFriends()
                     } label: {
                         Text("Make Video")
                     }
+                    .padding()
+                    
+                    Spacer()
+                    
+                    NavigationLink {
+                        VideoList()
+                    } label: {
+                        Text("My Videos")
+                    }
+                    .padding()
                 }
             }
-            
-            
-            /*
-            HStack {
-                Text("My Videos")
-                    .padding()
-                
-                Spacer()
-                
-                Text("Create Video")
-                    .padding()
-            }
-             */
         }
-        //.position(x: 190, y: 50)
+        .position(x: 200, y: -30)
     }
 }
 

@@ -13,33 +13,30 @@ import UIKit
 
 struct VideoMenu: View {
     
-    var title: String
-    
-    var resource: String
+    var video: VideoModel
         
     var body: some View {
         VStack {
             
             HStack {
-                Text(title)
+                Text(video.name)
                     .font(.title.bold())
                 
                 NavigationView {
                     NavigationLink {
-                        Header()
+                        VideoInfo(video: video)
                     } label: {
                         Text("Info")
                     }
                 }
             }
             
-            VideoPlayer(player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: resource, ofType: "mov")!)))
+            VideoPlayer(player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: video.url, ofType: "mov")!)))
 
             Image(systemName: "circle")
                 .resizable()
                 .frame(width: 50, height: 50, alignment: .center)
-            
-            //Spacer()
+
         }
         
     }
@@ -47,7 +44,7 @@ struct VideoMenu: View {
 
 struct Video_Previews: PreviewProvider {
     static var previews: some View {
-        VideoMenu(title: "Beach Trip", resource: "hogrider")
+        VideoMenu(video: allvideos[0])
     }
 }
 
