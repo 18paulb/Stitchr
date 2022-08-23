@@ -19,8 +19,19 @@ struct VideoMenu: View {
         
     var body: some View {
         VStack {
-            Text(title)
-                .font(.title.bold())
+            
+            HStack {
+                Text(title)
+                    .font(.title.bold())
+                
+                NavigationView {
+                    NavigationLink {
+                        Header()
+                    } label: {
+                        Text("Info")
+                    }
+                }
+            }
             
             VideoPlayer(player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: resource, ofType: "mov")!)))
 
