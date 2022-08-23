@@ -47,18 +47,9 @@ class PreviewView: UIView {
 
 struct VideoRecord: View {
     var body: some View {
-        //Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
         CameraView()
     }
 }
-
-/*
-struct PreviewView_Previews: PreviewProvider {
-    static var previews: some UIView {
-        PreviewView()
-    }
-}
-*/
 
 
 struct VideoRecord_Previews: PreviewProvider {

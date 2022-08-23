@@ -14,31 +14,38 @@ struct Header: View {
             Text("Stitcher")
                 .font(.title)
                 .foregroundColor(.black)
-                .frame(maxHeight: 50)
-            /*
-            //FIXME: Navigation Views are deprecated
+                .frame(height: 30)
+            
             NavigationView {
-                HStack {
+                List {
                     NavigationLink {
                         VideoList()
                     } label: {
                         Text("My Videos")
                     }
-                    .padding()
-                    
-                    Spacer()
                     
                     NavigationLink {
-                        VideoRecord()
-                        //Text("Hello World")
+                        ChooseFriends()
                     } label: {
                         Text("Make Video")
                     }
-                    .padding()
                 }
+            }
+            
+            
+            /*
+            HStack {
+                Text("My Videos")
+                    .padding()
+                
+                Spacer()
+                
+                Text("Create Video")
+                    .padding()
             }
              */
         }
+        //.position(x: 190, y: 50)
     }
 }
 

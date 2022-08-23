@@ -8,7 +8,6 @@
 import SwiftUI
 import UIKit
 
-
 @main
 struct StitchrApp: App {
     

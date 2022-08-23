@@ -17,7 +17,7 @@ struct VideoList: View {
                     VStack {
                         VideoClip()
                         NavigationLink {
-                            VideoMenu(title: video.name, resource: video.url)
+                                VideoMenu(title: video.name, resource: video.url)
                         } label: {
                             Text("Add To Video")
                         }.padding()

@@ -14,8 +14,9 @@ struct ContentView: View {
     var body: some View {
         
         VStack {
-            Header()
-            CameraView()
+            //Header()
+            //CameraView()
+            ChooseFriends()
         }
     }
 }

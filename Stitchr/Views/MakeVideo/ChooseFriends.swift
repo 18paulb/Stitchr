@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MakeVideo: View {
+struct ChooseFriends: View {
     
     @EnvironmentObject var modelData: ModelData
 
@@ -36,6 +36,12 @@ struct MakeVideo: View {
     
     var body: some View {
         ZStack {
+            
+            if chosenFriends.count != 0 {
+                MakeVideo(friendList: chosenFriends)
+                    .position(x: 310, y: 20)
+            }
+            
             VStack {
                 ForEach($modelData.friends) { $friend in
             
@@ -52,7 +58,10 @@ struct MakeVideo: View {
                             })
                         } else {
                             Button("Add", action: {chosenFriends.append(friend)})
+                            
                         }
+                        
+                        Spacer()
                         
                     }
                 }
@@ -61,9 +70,9 @@ struct MakeVideo: View {
     }
 }
 
-struct MakeVideo_Previews: PreviewProvider {
+struct ChooseFriends_Previews: PreviewProvider {
     static var previews: some View {
-        MakeVideo()
+        ChooseFriends()
             .environmentObject(ModelData())
     }
 }

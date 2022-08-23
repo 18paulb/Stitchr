@@ -22,7 +22,8 @@
 		1C27C24E2878C01600E5D17D /* dog.mov in Resources */ = {isa = PBXBuildFile; fileRef = 1C27C24D2878C01600E5D17D /* dog.mov */; };
 		1C3D20E228811E41001A81D2 /* File in Resources */ = {isa = PBXBuildFile; fileRef = 1C3D20E128811E41001A81D2 /* File */; };
 		1C4103D028B035B900BDEDB4 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4103CF28B035B900BDEDB4 /* Header.swift */; };
-		1C7BC9C9288F772600ADA2DA /* MakeVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7BC9C8288F772600ADA2DA /* MakeVideo.swift */; };
+		1C4103D528B1811F00BDEDB4 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4103D428B1811F00BDEDB4 /* UserModel.swift */; };
+		1C7BC9C9288F772600ADA2DA /* ChooseFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7BC9C8288F772600ADA2DA /* ChooseFriends.swift */; };
 		1C9CEB70287C88F400918342 /* ProfilePic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9CEB6F287C88F400918342 /* ProfilePic.swift */; };
 		1CB1CEC12874C721006CE00E /* StitchrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB1CEC02874C721006CE00E /* StitchrApp.swift */; };
 		1CB1CEC32874C721006CE00E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB1CEC22874C721006CE00E /* ContentView.swift */; };
@@ -41,6 +42,7 @@
 		1CC7B7232895BA340044BD44 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC7B7222895BA330044BD44 /* PhotoView.swift */; };
 		1CC7B7252895BA4A0044BD44 /* ThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC7B7242895BA4A0044BD44 /* ThumbnailView.swift */; };
 		1CC7B7272895BA680044BD44 /* PhotoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC7B7262895BA680044BD44 /* PhotoItemView.swift */; };
+		1CEA49D328B18DD9000696B6 /* MakeVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEA49D228B18DD9000696B6 /* MakeVideo.swift */; };
 		1CF591FE2885BBCA0097FA26 /* VideoRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF591FD2885BBCA0097FA26 /* VideoRecord.swift */; };
 /* End PBXBuildFile section */
 
@@ -78,7 +80,8 @@
 		1C27C24D2878C01600E5D17D /* dog.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = dog.mov; sourceTree = "<group>"; };
 		1C3D20E128811E41001A81D2 /* File */ = {isa = PBXFileReference; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
 		1C4103CF28B035B900BDEDB4 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
-		1C7BC9C8288F772600ADA2DA /* MakeVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeVideo.swift; sourceTree = "<group>"; };
+		1C4103D428B1811F00BDEDB4 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		1C7BC9C8288F772600ADA2DA /* ChooseFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseFriends.swift; sourceTree = "<group>"; };
 		1C9CEB6F287C88F400918342 /* ProfilePic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePic.swift; sourceTree = "<group>"; };
 		1CB1CEBD2874C721006CE00E /* Stitchr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stitchr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CB1CEC02874C721006CE00E /* StitchrApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StitchrApp.swift; sourceTree = "<group>"; };
@@ -100,6 +103,7 @@
 		1CC7B7222895BA330044BD44 /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
 		1CC7B7242895BA4A0044BD44 /* ThumbnailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailView.swift; sourceTree = "<group>"; };
 		1CC7B7262895BA680044BD44 /* PhotoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoItemView.swift; sourceTree = "<group>"; };
+		1CEA49D228B18DD9000696B6 /* MakeVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeVideo.swift; sourceTree = "<group>"; };
 		1CF591FD2885BBCA0097FA26 /* VideoRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRecord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,14 +137,14 @@
 			children = (
 				1CC7B7102895B82F0044BD44 /* CameraTest */,
 				1CB1CEC22874C721006CE00E /* ContentView.swift */,
-				1C27C1C7287641D600E5D17D /* VideoList.swift */,
-				1C27C1CE28768AE000E5D17D /* VideoMenu.swift */,
-				1C9CEB6F287C88F400918342 /* ProfilePic.swift */,
-				1C27C23A28779E4100E5D17D /* VideoClip.swift */,
-				1C27C23C2877A4FC00E5D17D /* FriendList.swift */,
-				1CF591FD2885BBCA0097FA26 /* VideoRecord.swift */,
-				1C7BC9C8288F772600ADA2DA /* MakeVideo.swift */,
 				1C4103CF28B035B900BDEDB4 /* Header.swift */,
+				1CF591FD2885BBCA0097FA26 /* VideoRecord.swift */,
+				1C27C23A28779E4100E5D17D /* VideoClip.swift */,
+				1C27C1C7287641D600E5D17D /* VideoList.swift */,
+				1C9CEB6F287C88F400918342 /* ProfilePic.swift */,
+				1C27C23C2877A4FC00E5D17D /* FriendList.swift */,
+				1C27C1CE28768AE000E5D17D /* VideoMenu.swift */,
+				1CEA49D428B1EF13000696B6 /* MakeVideo */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -151,6 +155,7 @@
 				1C27C23E2877E60D00E5D17D /* VideoModel.swift */,
 				1C27C2422878953500E5D17D /* FriendModel.swift */,
 				1C27C2402877E6B700E5D17D /* ModelData.swift */,
+				1C4103D428B1811F00BDEDB4 /* UserModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -243,6 +248,15 @@
 				1CC7B71C2895B9A30044BD44 /* PhotoAsset.swift */,
 			);
 			path = CameraTest;
+			sourceTree = "<group>";
+		};
+		1CEA49D428B1EF13000696B6 /* MakeVideo */ = {
+			isa = PBXGroup;
+			children = (
+				1C7BC9C8288F772600ADA2DA /* ChooseFriends.swift */,
+				1CEA49D228B18DD9000696B6 /* MakeVideo.swift */,
+			);
+			path = MakeVideo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,6 +409,7 @@
 				1C4103D028B035B900BDEDB4 /* Header.swift in Sources */,
 				1CC7B7232895BA340044BD44 /* PhotoView.swift in Sources */,
 				1CC7B7132895B89A0044BD44 /* Camera.swift in Sources */,
+				1CEA49D328B18DD9000696B6 /* MakeVideo.swift in Sources */,
 				1C27C23928779CD100E5D17D /* DataModel.swift in Sources */,
 				1CB1CEC12874C721006CE00E /* StitchrApp.swift in Sources */,
 				1CC7B7152895B8F20044BD44 /* PhotoCollection.swift in Sources */,
@@ -403,7 +418,8 @@
 				1CF591FE2885BBCA0097FA26 /* VideoRecord.swift in Sources */,
 				1C27C1CF28768AE000E5D17D /* VideoMenu.swift in Sources */,
 				1C27C23D2877A4FC00E5D17D /* FriendList.swift in Sources */,
-				1C7BC9C9288F772600ADA2DA /* MakeVideo.swift in Sources */,
+				1C7BC9C9288F772600ADA2DA /* ChooseFriends.swift in Sources */,
+				1C4103D528B1811F00BDEDB4 /* UserModel.swift in Sources */,
 				1CC7B7192895B9420044BD44 /* CachedImageManager.swift in Sources */,
 				1CC7B70F2895B7CC0044BD44 /* CameraView.swift in Sources */,
 				1CC7B71F2895B9EC0044BD44 /* ViewfinderView.swift in Sources */,
@@ -572,8 +588,9 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Stitchr/Info.plist;
-				INFOPLIST_KEY_NSCameraUsageDescription = "Please Allow Access To Camera";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Please Allow Acces To Microphone";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Stitchr needs access to the camera to take videos";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Stitchr needs access to the microphone to take videos";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Stcihr needs access to your photo library";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -606,8 +623,9 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Stitchr/Info.plist;
-				INFOPLIST_KEY_NSCameraUsageDescription = "Please Allow Access To Camera";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Please Allow Acces To Microphone";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Stitchr needs access to the camera to take videos";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Stitchr needs access to the microphone to take videos";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Stcihr needs access to your photo library";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
