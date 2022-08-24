@@ -44,6 +44,7 @@
 		1CC7B7272895BA680044BD44 /* PhotoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC7B7262895BA680044BD44 /* PhotoItemView.swift */; };
 		1CEA49D328B18DD9000696B6 /* MakeVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEA49D228B18DD9000696B6 /* MakeVideo.swift */; };
 		1CEA49D628B48429000696B6 /* VideoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEA49D528B48429000696B6 /* VideoInfo.swift */; };
+		1CEA49D928B53D86000696B6 /* AddNewContributer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEA49D828B53D85000696B6 /* AddNewContributer.swift */; };
 		1CF591FE2885BBCA0097FA26 /* VideoRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF591FD2885BBCA0097FA26 /* VideoRecord.swift */; };
 /* End PBXBuildFile section */
 
@@ -106,6 +107,7 @@
 		1CC7B7262895BA680044BD44 /* PhotoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoItemView.swift; sourceTree = "<group>"; };
 		1CEA49D228B18DD9000696B6 /* MakeVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeVideo.swift; sourceTree = "<group>"; };
 		1CEA49D528B48429000696B6 /* VideoInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VideoInfo.swift; path = Stitchr/Views/ExistingVideo/VideoInfo.swift; sourceTree = SOURCE_ROOT; };
+		1CEA49D828B53D85000696B6 /* AddNewContributer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewContributer.swift; sourceTree = "<group>"; };
 		1CF591FD2885BBCA0097FA26 /* VideoRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRecord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -266,6 +268,7 @@
 			children = (
 				1C27C1CE28768AE000E5D17D /* VideoMenu.swift */,
 				1CEA49D528B48429000696B6 /* VideoInfo.swift */,
+				1CEA49D828B53D85000696B6 /* AddNewContributer.swift */,
 			);
 			path = ExistingVideo;
 			sourceTree = "<group>";
@@ -434,6 +437,7 @@
 				1CC7B7192895B9420044BD44 /* CachedImageManager.swift in Sources */,
 				1CC7B70F2895B7CC0044BD44 /* CameraView.swift in Sources */,
 				1CC7B71F2895B9EC0044BD44 /* ViewfinderView.swift in Sources */,
+				1CEA49D928B53D86000696B6 /* AddNewContributer.swift in Sources */,
 				1CEA49D628B48429000696B6 /* VideoInfo.swift in Sources */,
 				1CC7B7172895B92C0044BD44 /* PhotoAssetCollection.swift in Sources */,
 				1CC7B71D2895B9A30044BD44 /* PhotoAsset.swift in Sources */,

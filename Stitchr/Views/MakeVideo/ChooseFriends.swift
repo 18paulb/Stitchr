@@ -13,6 +13,10 @@ struct ChooseFriends: View {
 
     @State private var chosenFriends: [FriendModel] = []
     
+    @State private var videoName: String = ""
+    
+    @State private var createVideoButtonDisabled: Bool = true
+    
     mutating func chooseFriend(_friend: FriendModel) -> Void {
         chosenFriends.append(_friend)
     }
@@ -35,14 +39,22 @@ struct ChooseFriends: View {
     
     
     var body: some View {
-        ZStack {
+        VStack {
             
-            if chosenFriends.count != 0 {
-                MakeVideo(friendList: chosenFriends)
-                    .position(x: 310, y: 20)
+            Button("Make Video") {
+                let newVideo = VideoModel(id: allvideos.count+1, name: videoName, length: 34, url: "hogrider", contributers: chosenFriends)
+                allvideos.append(newVideo)
             }
+            .disabled(createVideoButtonDisabled)
             
-            VStack {
+            List {
+                
+                TextField(
+                    "Name of Video",
+                    text: $videoName
+                )
+                .multilineTextAlignment(.center)
+                
                 ForEach($modelData.friends) { $friend in
             
                     HStack {
@@ -55,16 +67,20 @@ struct ChooseFriends: View {
                                 if let index = chosenFriends.firstIndex(of: friend) {
                                     chosenFriends.remove(at: index)
                                 }
+                            
                             })
                         } else {
-                            Button("Add", action: {chosenFriends.append(friend)})
-                            
+                            Button("Add", action: {
+                                chosenFriends.append(friend)
+                                //chooseFriend(_friend: friend)
+                            })
                         }
-                        
-                        Spacer()
-                        
                     }
                 }
+                
+                //if chosenFriends.count != 0 && videoName != "" {
+                //    createVideoButtonDisabled = false
+                //}
             }
         }
     }

@@ -13,12 +13,24 @@ struct VideoInfo: View {
     
     var body: some View {
         VStack {
-            Text("Contributors:")
             
+            Text("Video name: \(video.name)")
+                .padding(.bottom)
+            
+            Text("Contributors:")
             ForEach(video.contributers) { contributor in
                 Text(contributor.username ?? "No Name")
                     .bold()
             }
+
+            
+            Text("Length: \(video.length) seconds")
+                .padding(.top)
+            
+            Button("Add contributer(s)", action: {
+                print("Hello")
+            })
+            .padding(.top)
         }
     }
 }

@@ -20,6 +20,7 @@ struct VideoClip: View {
         
             //Grabs the video Asset
             let asset = AVAsset(url: URL(string: "hogrider")!)
+
         
             //Use an image generator to extract images from a video asset at particular times within its timeline.
             let generator = AVAssetImageGenerator(asset: asset)
@@ -34,6 +35,7 @@ struct VideoClip: View {
             
             //FIXME: Deprecated but no other way while image(:at) is in beta
             let image = try generator.copyCGImage(at: .zero, actualTime: nil)
+ 
             
             let thumbnail = UIImage(cgImage: image)
             return thumbnail
